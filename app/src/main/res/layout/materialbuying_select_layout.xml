@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background1"
+    android:stackFromBottom="true"
+    android:transcriptMode="alwaysScroll">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="51dip"
+        android:clickable="true"
+        android:layout_marginLeft="5dip">
+
+        <TextView
+            android:id="@+id/buyingorsales"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="请    选    择："
+            android:textColor="@color/dark"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/buyingorsales"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout"
+            >
+            <Spinner
+                android:id="@+id/choose"
+                android:layout_width="170dp"
+                android:layout_height="39dp"
+                android:textSize="20dp"
+                android:textColor="@color/dark"/>
+            <Button
+                android:id="@+id/query"
+                android:layout_width="55dp"
+                android:layout_height="39dp"
+                android:text="查询"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/queding1"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="51dip"
+        android:clickable="true"
+        android:layout_marginLeft="5dip">
+
+        <TextView
+            android:id="@+id/buyingtype"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="请选择品种："
+            android:textColor="@color/dark"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/buyingtype"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/choosetype"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:textSize="20dp"
+                android:textColor="@color/dark"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="51dip"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dip">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="购 入 单 价 ："
+            android:textColor="@color/dark"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/price_et"
+            android:layout_width="274dp"
+            android:layout_height="49dp"
+            android:textSize="20dp"
+            android:textColor="@color/dark"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="51dip"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dip">
+
+        <TextView
+            android:id="@+id/sumprice"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="购 入 总 价 ："
+            android:textColor="@color/dark"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/sumprice_et"
+            android:layout_width="274dp"
+            android:layout_height="49dp"
+            android:textSize="20dp"
+            android:textColor="@color/dark"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="51dip"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dip">
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="购 入 数 量 ："
+            android:textColor="@color/dark"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/count_et"
+                android:layout_width="274dp"
+                android:layout_height="49dp"
+                android:textSize="20dp"
+                android:textColor="@color/dark"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:weightSum="1"
+        android:gravity="center_vertical">
+        <Button
+            android:id="@+id/but_showDate"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="请选择购入日期"
+            android:background="@drawable/queding1"
+            android:layout_weight="0.20" />
+
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/showDate"
+            android:layout_width="215dp"
+            android:layout_height="40dp"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:weightSum="1"
+        android:gravity="center_vertical">
+        <Button
+            android:id="@+id/but_showDate1"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="保 质 期 至"
+            android:background="@drawable/queding1"
+            android:layout_weight="0.20" />
+
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/showDate1"
+            android:layout_width="215dp"
+            android:layout_height="40dp"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="101dip"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dip">
+
+        <TextView
+            android:id="@+id/Description"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="附 加 说 明 ："
+            android:textColor="@color/dark"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/Des_et"
+            android:layout_width="274dp"
+            android:layout_height="79dp"
+            android:textSize="20dp"
+            android:textColor="@color/dark"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/query2"
+        android:onClick="Query"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/queding"
+        android:layout_gravity="center_horizontal"
+        android:text="确定"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

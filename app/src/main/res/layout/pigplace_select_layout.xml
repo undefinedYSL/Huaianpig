@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/mtbuying_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="61dp"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/buying_iv"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/buying" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/buying_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/materialbuying"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="材料购入"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mtusing_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="61dp"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/using_iv"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/using" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/using_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/materialusing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="材料领用"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mtusing_later_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="61dp"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/using_later_iv"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/materialusinglater" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/using_later_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/materialusing_later"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="材料使用"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="61dp"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/video_iv"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/videozj" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/video_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/video1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="视频监控"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/plc_rl"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="61dp"-->
+        <!--android:clickable="true" >-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/plc_iv"-->
+            <!--android:layout_width="31dip"-->
+            <!--android:layout_height="31dip"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="5dip"-->
+            <!--android:background="@drawable/plccontrol" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="5dip"-->
+            <!--android:layout_toRightOf="@id/plc_iv"-->
+            <!--android:orientation="vertical" >-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/plc1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="PLC控制"-->
+                <!--android:textColor="@android:color/secondary_text_light"-->
+                <!--android:textSize="18dip"-->
+                <!--android:textStyle="bold" />-->
+
+        <!--</LinearLayout>-->
+        <!--<ImageView-->
+            <!--android:layout_width="6dip"-->
+            <!--android:layout_height="12dip"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="15dip"-->
+            <!--android:src="@drawable/home_index_arrow" />-->
+
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

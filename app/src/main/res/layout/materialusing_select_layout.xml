@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="51dip"
+        android:clickable="true"
+        android:layout_marginLeft="5dip">
+
+        <TextView
+            android:id="@+id/buyingorsales"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="请    选    择："
+            android:textColor="@color/dark"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/buyingorsales"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout"
+            >
+            <Spinner
+                android:id="@+id/choose"
+                android:layout_width="170dp"
+                android:layout_height="39dp"
+                android:textSize="20dp"
+                android:textColor="@color/dark"/>
+            <Button
+                android:id="@+id/chaxun"
+                android:layout_width="55dp"
+                android:layout_height="39dp"
+                android:text="查询"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/queding1"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="51dip"
+        android:clickable="true"
+        android:layout_marginLeft="5dip">
+
+        <TextView
+            android:id="@+id/buyingtype"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="请选择品种："
+            android:textColor="@color/dark"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/buyingtype"
+            android:orientation="horizontal">
+            <Spinner
+                android:id="@+id/choosetype"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:textSize="20dp"
+                android:textColor="@color/dark"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="81dip"
+        android:clickable="true"
+        android:layout_marginLeft="5dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/usingcount"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="领 用 数 量 ："
+            android:textColor="@color/dark"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/usingcount_et"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:textSize="20dp"
+                android:textColor="@color/dark"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="280dp" />
+
+    <Button
+        android:id="@+id/query"
+        android:onClick="Query"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/queding"
+        android:layout_gravity="center_horizontal"
+        android:text="确定"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dip"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeClientinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="61dp"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/clientinfo_iv"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/clienginfo" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/clientinfo_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/ClientInf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="客户信息"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativetraderecoed"
+        android:layout_width="match_parent"
+        android:layout_height="61dip"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/record_iv"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/record" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/record_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="交易记录"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeconv"
+        android:layout_width="match_parent"
+        android:layout_height="61dip"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/zhuanlan_iv"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/zhuanlan" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/zhuanlan_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/conv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="猪只转栏"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativepigweight"
+        android:layout_width="match_parent"
+        android:layout_height="61dip"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/pigweight_iv"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/zhuzhixinxi" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/pigweight_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pigweight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="猪只信息"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativepigchangeweight"
+        android:layout_width="match_parent"
+        android:layout_height="61dip"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/pigchangeweight_iv"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/weight" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/pigchangeweight_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pigchangeweight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="体重更改"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativepigdeath"
+        android:layout_width="match_parent"
+        android:layout_height="61dip"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/death_iv"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/death" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/death_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pigdeath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="猪只死亡"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativesale"
+        android:layout_width="match_parent"
+        android:layout_height="61dip"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/sale_iv"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/zhuzhimaichu" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/sale_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/sale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="猪只销售"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativecard"
+        android:layout_width="match_parent"
+        android:layout_height="61dip"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/zxing1"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/index_browse" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/zxing1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="电子耳牌管理"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativecure"
+        android:layout_width="match_parent"
+        android:layout_height="61dip"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/pigsick_iv"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/cure" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/pigsick_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/cure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="猪病诊治与记录"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+    </RelativeLayout>
+
+
+</LinearLayout>

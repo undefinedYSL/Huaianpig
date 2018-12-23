@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="5dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="51dip"
+        android:clickable="true"
+        >
+
+        <TextView
+            android:id="@+id/buyingorsales"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="请 选 择 ："
+            android:textColor="@color/dark"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/buyingorsales"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout"
+            >
+            <Spinner
+                android:id="@+id/choose"
+                android:layout_width="227dp"
+                android:layout_height="39dp"
+                android:textSize="20dp"
+                android:textColor="@color/dark"/>
+            <!--<Button-->
+                <!--android:id="@+id/chaxun"-->
+                <!--android:layout_width="55dp"-->
+                <!--android:layout_height="39dp"-->
+                <!--android:text="查询"-->
+                <!--android:layout_marginRight="5dip"-->
+                <!--android:background="@drawable/queding1"/>-->
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="91dip"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/pigid"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="猪只编号："
+            android:textColor="@color/dark"
+            android:textSize="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/pigid"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal|center"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/pigid_tv"
+                android:layout_width="200dp"
+                android:layout_height="63dp"
+                android:textSize="18dp"
+                android:textColor="@color/dark"
+                android:layout_centerVertical="true"
+                android:layout_weight="1.42" />
+
+            <Button
+                android:id="@+id/chaxun1"
+                android:layout_width="68dp"
+                android:layout_height="40dp"
+                android:text="查询"
+                android:background="@drawable/queding1"
+                android:layout_centerVertical="true"
+                android:gravity="center"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--&lt;!&ndash; 标题 &ndash;&gt;-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.45"
+            android:text="名称" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.18"
+            android:text="数量" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间" />
+
+    </LinearLayout>
+
+    <!-- ListView控件 -->
+    <ListView
+        android:id="@+id/list_mainmaterialusing"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_weight="1">
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="51dip"
+        android:layout_marginLeft="5dip"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/buyingorsales"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="请选择用户名："
+            android:textColor="@color/dark"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/choose"
+            android:layout_toRightOf="@id/buyingorsales"
+            android:layout_width="140dp"
+            android:layout_height="39dp"
+            android:textColor="@color/dark"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true" />
+
+        <Button
+            android:id="@+id/chaxun"
+            android:layout_toRightOf="@id/choose"
+            android:layout_alignBottom="@id/buyingorsales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:onClick="chaxun"
+            android:text="查询" />
+    </RelativeLayout>
+
+    <!--&lt;!&ndash; 标题 &ndash;&gt;-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.62"
+            android:text="订单号：" />
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="总金额"
+            android:layout_weight="0.14" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.02"
+            android:text="日期" />
+
+        <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付状态" />
+
+    </LinearLayout>
+    <!-- ListView控件 -->
+    <ListView
+        android:id="@+id/list_main"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_weight="0.86">
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="10dip">
+
+    <RelativeLayout
+        android:id="@+id/relativePiginfo"
+        android:layout_width="fill_parent"
+        android:layout_height="61dp"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/Piginfo_iv"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/zhuzhixinxi1" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/Piginfo_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/PigInf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="猪只信息"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeSickPigInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="61dp"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/sickpiginfo_iv"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/piginfo" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/sickpiginfo_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/sickpiginfo_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="销售信息"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeDeadPigInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="61dp"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/DeadPigInfo"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/wangzhuxinxi" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/DeadPigInfo"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/deadpiginfo_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="亡猪信息"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeMaterialTakeInfo"
+        android:layout_width="match_parent"
+        android:layout_height="61dip"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/MaterialTakeInfo"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/feedinfo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/MaterialTakeInfo"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/materialtakeinfo_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="材料领用信息"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeMaterialBuyingInfo"
+        android:layout_width="match_parent"
+        android:layout_height="61dip"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/MaterialBuyingInfo_iv"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/medicine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/MaterialBuyingInfo_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/materialbuyinginfo_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="材料买入信息"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeMaterialUsingInfo"
+        android:layout_width="match_parent"
+        android:layout_height="61dip"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/MaterialUsingInfo_iv"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/vaccine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/MaterialUsingInfo_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/materialusinginfo_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="材料使用信息"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeWeightTrend"
+        android:layout_width="match_parent"
+        android:layout_height="61dip"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/WeightTread_iv"
+            android:layout_width="31dip"
+            android:layout_height="31dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/weighttread" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/WeightTread_iv"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/weighttread_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="猪只体重变化查询"
+                android:textColor="@android:color/secondary_text_light"
+                android:textSize="18dip"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="6dip"
+            android:layout_height="12dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dip"
+            android:src="@drawable/home_index_arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

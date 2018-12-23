@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fr.huaianpig">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.NFC" />
+
+    <application
+        android:allowBackup="true"
+        android:name=".QuanjubianliangActivity"
+        android:icon="@drawable/huaian"
+        android:label="智能化猪场综合管控系统"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".AboutActivity"></activity>
+        <activity android:name=".ContactActivity"></activity>
+        <activity android:name=".FunctionActivity"></activity>
+        <activity android:name=".HelpActivity"></activity>
+        <activity android:name=".SystemActivity"></activity>
+        <activity android:name=".PigmanageActivity"></activity>
+        <activity android:name=".PigplaceActivity"></activity>
+        <activity android:name=".ClientInfoActivity"></activity>
+        <activity android:name=".TradeRecordActivity"></activity>
+        <activity android:name="com.example.fr.huaianpig.PigCureActivity">
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ConvStyActivity"></activity>
+        <activity android:name=".PigWeightActivity"></activity>
+        <activity android:name=".PigDeathActivity"></activity>
+        <activity android:name=".MaterialBuyingActivity"></activity>
+        <activity android:name=".MaterialUsingActivity"></activity>
+        <activity android:name=".MaterialUsingLaterActivity"></activity>
+        <activity android:name=".CardActivity"></activity>
+        <activity android:name=".SaleActivity"></activity>
+        <activity android:name=".VideoActivity"></activity>
+        <activity android:name=".PigInfoActivity"></activity>
+        <activity android:name=".ChangeWeightActivity"></activity>
+        <activity android:name=".SickPigInfoActivity"></activity>
+        <activity android:name=".DeadPigInfoActivity"></activity>
+        <activity android:name=".MaterialTakeInfoActivity"></activity>
+        <activity android:name=".MaterialBuyingInfoActivity"></activity>
+        <activity android:name=".MaterialUsingInfoActivity"></activity>
+        <activity android:name=".WeightTreadActivity"></activity>
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
